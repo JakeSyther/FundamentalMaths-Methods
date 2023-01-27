@@ -1,0 +1,61 @@
+The Manhattan distance, also known as the L1 distance, is a measure of the distance between two points in a multi-dimensional space.
+It is calculated as the sum of the absolute differences of their coordinates.
+
+An example of how to calculate the Manhattan distance between two points in a 2D space:
+
+Point A: (2, 3)
+Point B: (5, 7)
+
+To calculate the Manhattan distance between these two points, we will take the absolute difference of their x-coordinates and
+add it to the absolute difference of their y-coordinates:
+
+|2 - 5| + |3 - 7| = 3 + 4 = 7
+
+So the Manhattan distance between Point A and Point B is 7.
+
+Here is another example:
+
+Point A: (4, 5, 6)
+Point B: (1, 2, 3)
+
+To calculate the Manhattan distance between these two points, we will take the absolute difference of their x-coordinates and
+add it to the absolute difference of their y-coordinates and z-coordinates:
+
+|4 - 1| + |5 - 2| + |6 - 3| = 3 + 3 + 3 = 9
+
+So the Manhattan distance between Point A and Point B is 9.
+
+It is also important to know that this method is not a proper distance metric as it does not satisfy the triangle inequality and
+is only used in some optimization problems.
+
+The use of Manhattan distance is common in problems such as the travelling salesman problem, where the objective is to find the shortest path that visits a certain
+set of points, and the distance between points is measured using the Manhattan distance.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The Traveling Salesman Problem (TSP) is a well-known problem in combinatorial optimization. It asks the following question:
+"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and
+returns to the origin city?"
+
+An example of how the TSP could be approached:
+
+1. Start by creating a list of all the cities and the distances between them.
+
+2. Begin by visiting the first city.
+
+3. At each step, choose the next city that minimizes the total distance traveled so far.
+
+4. Keep track of the total distance traveled and the path taken.
+
+5. Repeat steps 3 and 4 until all cities have been visited.
+
+6. Once all cities have been visited, compare the total distance traveled to the distance of all other paths and select the shortest one.
+
+The TSP is a NP-hard problem, meaning that it's very difficult to find an exact solution for large numbers of cities.
+However, there are approximate algorithms that can be used to find near-optimal solutions, such as the nearest neighbour algorithm, the 2-opt algorithm,
+or the simulated annealing algorithm.
+
+The most important aspect of solving the TSP is finding the best algorithm for the problem at hand.
+The complexity of the algorithm depends on the size of the problem and the required precision.
+
+
