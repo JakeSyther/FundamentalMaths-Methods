@@ -14,6 +14,12 @@ B = <5, -1, 6>
 Step 2: Use the cross product formula to calculate the components of the resulting vector. The formula is:
 ----------------------------------------------------------------------
 C = <Ay * Bz - Az * By, Az * Bx - Ax * Bz, Ax * By - Ay * Bx>
+    <--------1-------> <--------2-------> <--------3-------->
+
+1. < Ay * Bz - Az * By > = < 4 * 6 - 2 * -1 >  // Cx
+2. < Az * Bx - Ax * Bz > = < 2 * 5 - 3 * 6  >  // Cy
+3. < Ax * By - Ay * Bx > = < 3 * -1 - 4 * 6 >  // Cz
+
 ----------------------------------------------------------------------
 
 so in this case:
@@ -38,17 +44,12 @@ You can also use the determinant of the matrix formed by the vectors as columns 
 
 
 
-
-
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 Here's an example of how to calculate the cross product of two vectors in 2D space:
 --------------
 A = <2, 4>
 B = <6, -3>
 --------------
-
 
 The cross product of two vectors in 2D space is a scalar, not a vector. The formula for the cross product of two 2D vectors is:
 ------------------------------
@@ -62,6 +63,4 @@ C = 2 * -3 - 4 * 6 = -6 + 24 = 18
 So the cross product of vectors A and B is 18.
 
 It's worth mentioning that the cross product is not commutative, meaning the order of the vectors matters, A x B != B x A.
-
-
 
