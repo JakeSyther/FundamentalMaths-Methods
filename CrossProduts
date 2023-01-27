@@ -1,0 +1,67 @@
+A cross product, also known as the vector product, is a mathematical operation that takes two vectors and returns a third vector that is perpendicular
+to both of the input vectors. The magnitude of the resulting vector is equal to the product of the magnitudes of the input vectors multiplied
+by the sine of the angle between them, and the direction of the resulting vector is given by the right-hand rule.
+
+An example of how to calculate the cross product of two vectors, A and B, in 3D space:
+
+Step 1: Identify the two vectors that you want to take the cross product of. For example:
+--------------
+A = <3, 4, 2>
+B = <5, -1, 6>
+--------------
+
+
+Step 2: Use the cross product formula to calculate the components of the resulting vector. The formula is:
+----------------------------------------------------------------------
+C = <Ay * Bz - Az * By, Az * Bx - Ax * Bz, Ax * By - Ay * Bx>
+----------------------------------------------------------------------
+
+so in this case:
+-------------------------------------
+Cx = 4 * 6 - 2 * -1 = 24 - -2 = 26
+Cy = 2 * 5 - 3 * 6 = 10 - 18 = -8
+Cz = 3 * -1 - 4 * 6 = -3 - 24 = -27
+-------------------------------------
+
+
+so the result of cross product is :
+------------------
+C = <26, -8, -27>
+------------------
+
+You can also use the determinant of the matrix formed by the vectors as columns to calculate the cross product:
+-------------------------------------
+| i  j  k |
+| Ax Ay Az|
+| Bx By Bz|
+-------------------------------------
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Here's an example of how to calculate the cross product of two vectors in 2D space:
+--------------
+A = <2, 4>
+B = <6, -3>
+--------------
+
+
+The cross product of two vectors in 2D space is a scalar, not a vector. The formula for the cross product of two 2D vectors is:
+------------------------------
+C = Ax * By - Ay * Bx
+------------------------------
+
+so in this case:
+-------------------------------------
+C = 2 * -3 - 4 * 6 = -6 + 24 = 18
+-------------------------------------
+So the cross product of vectors A and B is 18.
+
+It's worth mentioning that the cross product is not commutative, meaning the order of the vectors matters, A x B != B x A.
+
+
+
