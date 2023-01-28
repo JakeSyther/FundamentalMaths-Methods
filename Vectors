@@ -1,0 +1,170 @@
+A vector is a mathematical object that has both magnitude (length) and direction. It can be represented by an arrow pointing in a certain direction and with
+a certain length. Vectors are often used in physics and engineering to represent things like velocity, force, and acceleration.
+They can also be used in computer graphics, computer games, and computer simulations to represent things like position, movement, and rotation.
+
+There are different types of vectors, such as 2D vectors (which have x and y components) and 3D vectors (which have x, y, and z components).
+Vectors can be added and subtracted, and multiplied by a scalar (a number) to change their length.
+
+One of the most important properties of vectors is that they can be represented by a set of coordinates. For example, a 2D vector can be represented by (x, y),
+and a 3D vector can be represented by (x, y, z).
+
+There are many ways to work with vectors in programming, such as using built-in vector classes in programming languages or game engines,
+or using vector math libraries. Some common operations that can be performed on vectors include:
+
+*Adding two vectors together
+*Subtracting one vector from another
+*Multiplying a vector by a scalar
+*Finding the length (magnitude) of a vector
+*Finding the direction (unit vector) of a vector
+*Finding the dot product of two vectors
+*Finding the cross product of two vectors
+*Finding the angle between two vectors
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of adding two vectors together:
+Vector A = (2, 3, 4)
+Vector B = (1, 1, 1)
+
+Vector C = Vector A + Vector B
+
+Vector C would now equal (3, 4, 5)
+
+In this example, we have two vectors, Vector A and Vector B, which are represented by their respective x, y, and z values.
+We add the corresponding values of each vector together to get the values for Vector C. So, 2 + 1 = 3 for the x value, 3 + 1 = 4 for the y value, and 4 + 1 = 5
+for the z value.
+
+You can also add vectors using their magnitude and direction. In this case you need to use the vector addition formula.
+
+Vector A = magnitude of A * direction of A
+Vector B = magnitude of B * direction of B
+Vector C = Vector A + Vector B
+
+It's important to note that vectors can also be subtracted in a similar way.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of subtracting one vector from another:
+
+Vector A = new Vector3(3, 4, 5);
+Vector B = new Vector3(1, 2, 3);
+Vector C = A - B;
+
+In this example, Vector A has a value of (3, 4, 5) and Vector B has a value of (1, 2, 3). When we subtract Vector B from Vector A, we get a new Vector, Vector C,
+which has a value of (3 - 1, 4 - 2, 5 - 3) = (2, 2, 2).
+
+It's important to note that subtracting two vectors is not the same as subtracting their individual components. Subtracting two vectors,
+as shown in this example, results in a new vector with its own direction and magnitude.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of multiplying a vector by a scalar:
+
+We have a vector v = (3, 4) and we want to multiply it by a scalar of 2. To do this, we would simply multiply each component of the vector by the scalar:
+
+v = (3, 4) * 2 = (6, 8)
+
+So now our new vector is (6, 8), which is twice as long as the original vector.
+
+Another example:
+Let's say we have a vector v = (5, -2, 1) and we want to multiply it by a scalar of -3. To do this, we would simply multiply each component of the vector by the scalar:
+
+v = (5, -2, 1) * -3 = (-15, 6, -3)
+
+So now our new vector is (-15, 6, -3), which has the same direction but the magnitude is 3 times shorter than the original vector.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of finding the length (magnitude) of a vector:
+
+Vector A = (3, 4)
+
+To find the length (magnitude) of this vector, we use the Pythagorean theorem, which states that the length of a vector is equal to the square root of the
+sum of the squares of its components. So for Vector A, the length (magnitude) is:
+
+Length (magnitude) of Vector A = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5
+
+Another way to find the magnitude is using the dot product of the vector with itself.
+
+Length (magnitude) of Vector A = sqrt(Vector A.x * Vector A.x + Vector A.y * Vector A.y) = sqrt(33 + 44) = sqrt(9 + 16) = sqrt(25) = 5
+
+You can also use the built-in functions of the programming languages or game engines to find the magnitude of vector.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of Finding the direction (unit vector) of a vector:
+
+The direction of Vector A can be found by converting the vector into a unit vector. A unit vector has a magnitude of 1,
+while still preserving the direction of the original vector. To convert Vector A into a unit vector, we divide each of its x, y, and z values by its magnitude.
+The magnitude of Vector A can be found using the Pythagorean theorem:
+
+magnitude = sqrt(x^2 + y^2 + z^2) = sqrt(2^2 + 3^2 + 4^2) = sqrt(4 + 9 + 16) = sqrt(29)
+
+Unit vector A = (2/sqrt(29), 3/sqrt(29), 4/sqrt(29))
+
+This gives us the direction of Vector A in the form of a unit vector, which has a magnitude of 1 and preserves the direction of the original vector.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of finding the dot product of two vectors:
+
+Vector A = (2, 3, 4)
+Vector B = (1, 1, 1)
+
+Dot product = (2 * 1) + (3 * 1) + (4 * 1) = 2 + 3 + 4 = 9
+
+In this example, we have two vectors, Vector A and Vector B, which are represented by their respective x, y, and z values. To find the dot product,
+we multiply the corresponding values of each vector together and add them up. So, (2 * 1) + (3 * 1) + (4 * 1) = 2 + 3 + 4 = 9.
+
+It's important to note that the dot product of two vectors is a scalar value, which means it is a single number.
+The dot product can also be represented mathematically as A . B = |A| |B| cos(θ) where |A| and |B| are the magnitudes of vectors A and B and θ is the angle
+between the two vectors.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of finding the cross product of two vectors in 3D space:
+
+Vector A = (2, 3, 4)
+Vector B = (1, 1, 1)
+
+Vector C = cross(Vector A, Vector B)
+
+Vector C would now equal (-1, 2, -1)
+
+In this example, we have two vectors, Vector A and Vector B, which are represented by their respective x, y, and z values.
+To find the cross product, we use the cross product formula, which involves taking the determinant of a matrix made up of the vectors' x, y, and z values.
+
+It's important to note that the cross product of two vectors will result in a vector that is perpendicular to both of the input vectors,
+and that the direction of the cross product vector is determined by the "right hand rule" which is used to determine the direction of the vector.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+An example of finding the angle between two vectors:
+
+Vector A = (3, 4)
+Vector B = (4, 3)
+
+To find the angle between two vectors, we use the dot product formula:
+
+cos(theta) = (A dot B) / (magnitude of A * magnitude of B)
+
+where A and B are the vectors, and theta is the angle between them.
+
+First, we need to find the dot product of the two vectors:
+
+(3, 4) dot (4, 3) = (3 * 4) + (4 * 3) = 12 + 12 = 24
+
+Next, we need to find the magnitudes of the two vectors:
+
+magnitude of A = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5
+magnitude of B = sqrt(4^2 + 3^2) = sqrt(16 + 9) = sqrt(25) = 5
+
+Finally, we can use the dot product and magnitudes to find the angle between the two vectors:
+
+cos(theta) = (A dot B) / (magnitude of A * magnitude of B) = 24 / (5 * 5) = 24/25
+
+theta = acos(24/25)
+
+so the angle between two vectors is approximately 0.09 radians
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Note : To improve your understanding of vectors, you might try working through some online tutorials or exercises, or experimenting with different vector
+calculations in a programming environment like Unity. You might also try reading books or articles that explain the concepts and math behind vectors in more detail.
+Additionally, practicing vector calculations by hand can help you to better understand the concepts and how they relate to one another.
+
+
+Vector Calculator = https://www.mathsisfun.com/algebra/vector-calculator.html
+
